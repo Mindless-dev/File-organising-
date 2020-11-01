@@ -2,45 +2,110 @@
 <html>
   <head>
     <title>game hub</title>
-    <meta name="game hub" content="game page, used ,new and preorder" />
+    <meta name="game hub" content="game hub home page, used ,new and preorder" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/index.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+      integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
+      <a href="index.html">
+        <img
+          src="images/logo/GameHub_Logo.png"
+          alt="Game Hub Logo"
+          class="logo"
+      /></a>
+      <label class="hamburger-label" for="hamburger-menu"
+        ><i class="fas fa-bars"></i>
+      </label>
+      <input type="checkbox" id="hamburger-menu" />
+      
       <nav>
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li>
+            <a class="current" href="index.html" class="active">Home</a>
+          </li>
           <li><a href="newreleases.html">New Releases</a></li>
-          <li><a href="Games.html">Games</a></li>
           <li><a href="USEDGames.html"> Used Games</a></li>
+          <li><a href="Games.html">Games</a></li>
           <li><a href="log_in.html">Log in</a></li>
         </ul>
       </nav>
-      <label for="Search">Search</label>
-      <input type="Search field"> 
-      <a href="search results.html"><button>Search</button></a>
+      
+      <div class="icons">
+        <a href="account.html"><i class="icon_header account fas fa-user"></i></a>
+        <a href="account.html"><i class="icon_header far fa-heart"></i></a>
+        <a href="checkout.html"><i class="icon_header fa fa-shopping-cart"></i></a>
+      </div>
+      <section class="search_field">
+        <label for="Search"></label>
+        <input type="Search" />
+        <a href="search results.html"
+          ><i class="search_icon fas fa-search"></i
+        ></a>
+      </section>
+    
     </header>
 
     <main>
       <h1>Welcome to the universe of games</h1>
-      <h2>sell and buy used games</h2>
-      <h3>sell and buy used games</h3>
 
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
-        reiciendis, eum, vel fugiat quaerat
-      </p>
-      <a href="new user.html"><button>Sign up</button></a>
-      <a href="log_in.html"><button>Log in</button></a>
+      <section class="used_games">
+        <h3>sell and buy used games</h3>
+        <p>help other gamers out buy and sell your used games</p>
+        <a href="new user.html"><button>Sign up</button></a>
+        <a href="log_in.html"><button>Log in</button></a>
+      </section>
 
-     
+      <section class="new_games">
+        <h2>New releases</h2>
+        <p>efojoiajo jodfajdoi ajodiawjoiwj aoiwadjoiw jodfajdoi</p>
+        <a href="new_games.html"><button>new releases</button></a>
+      </section>
+
+      <section class="platform_categories">
+        <h2>game platforms and categories</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, quo
+          magnam cum consequatur
+        </p>
+        <a href="game_platform.html"
+          ><button>platform and categories</button></a
+        >
+      </section>
     </main>
     <footer>
-      Contact us: <br />
-      Phone: 5940943, Email:Gamehub@email <br />socials, icons<br />
-      About us: <br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <section class="contact">
+        <h3>Contact us:</h3>
+        <section class="phone">
+          <i class="icon fas fa-phone"></i>
+          <p>123456789</p>
+        </section>
+        <section class="email">
+          <i class="icon far fa-envelope"></i>
+          <p>Gamehub@email</p>
+        </section>
+
+        <section class="social_media">
+          <i class="icon fas fa-globe"></i>
+          <i class="social_icon fab fa-facebook-f"></i>
+          <i class="social_icon fab fa-instagram"></i>
+          <i class="social_icon fab fa-snapchat"></i>
+        </section>
+      </section>
+
+      <section class="about">
+        <h3>About us:</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Repudiandae sed cum reiciendis quo porro ducimus nobis</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Repudiandae sed cum reiciendis quo porro ducimus nobis</p>
+      </section>
     </footer>
   </body>
 </html>

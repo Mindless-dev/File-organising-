@@ -1,0 +1,353 @@
+@font-face {
+  font-family: "ms";
+  src: url("../fonts/ms\ refrence\ sans\ serif.TTF");
+}
+
+@font-face {
+  font-family: "tw";
+  src: url("../fonts/TCM_____.TTF");
+}
+
+:root {
+  --primary-color: #86a7df;
+  --secondary-color: #1b203d;
+  --hover-color: #fb8925;
+  --primary-text: "ms";
+  --secondary-text: "tw";
+}
+
+body {
+  font-family: var(--primary-text);
+}
+
+header {
+  background-color: var(--primary-color);
+  margin: 10px;
+}
+
+.icon,
+.icon_header,
+.search_icon, .product_icon {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.5em;
+  border-radius: 26px;
+  border: solid white 1px;
+  margin: 10px;
+  font-size: 1.5em;
+  box-shadow: 0px 3px 6px #272f59bc;
+}
+
+.icon:hover,
+.icon_header:hover,
+.search_icon:hover {
+  background-color: var(--hover-color);
+}
+
+.search_icon {
+  position: relative;
+  top: 25px;
+}
+
+nav,
+#hamburger-menu {
+  display: none;
+}
+nav li {
+  text-decoration: none;
+}
+nav a {
+  text-decoration: none;
+}
+
+.logo {
+  max-width: 200px;
+  margin: 10px;
+}
+
+.hamburger-label {
+  float: right;
+  font-size: 1.5em;
+  color: white;
+  background-color: var(--secondary-color);
+  border: white solid 1px;
+  margin: 10px;
+  border-radius: 50%;
+  padding: 5px;
+  text-align: center;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+  animation-name: nav_pop_up;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes nav_pop_up {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: block;
+  padding: 0.5em;
+}
+nav a {
+  color: white;
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+  border: 2px solid;
+  padding: 10px;
+  box-shadow: 0px 3px 6px #272f59bc;
+  display: flex;
+  justify-content: center;
+}
+
+.current {
+  border: solid var(--hover-color);
+}
+nav a:hover {
+  background-color: var(--hover-color);
+}
+
+.search_field > input {
+  max-width: 50%;
+  max-height: 100%;
+  border-radius: 20px;
+  padding: 1em;
+  border: none;
+  box-shadow: 0px 3px 6px #272f59bc;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+button {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 1em;
+  border-radius: 20px;
+  border: 2px solid;
+  box-shadow: 0px 3px 6px #272f59bc;
+}
+
+button:hover,.product_icon:hover {
+  background-color: orange;
+}
+
+/* main styling and posistion*/
+.product {
+  margin: 10px;
+  box-shadow: 0px 3px 6px #272f59bc;
+}
+
+.recomended {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product > a > img:hover {
+  animation-name: product_image;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes product_image {
+  0% {
+    box-shadow: none;
+  }
+
+  100% {
+    box-shadow: 6px 6px 6px #272f59bc;
+  }
+}
+
+.single_product {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-shadow: 3px 6px 8px #272f59bc;
+  margin: 20px auto;
+}
+h2 {
+  margin: 10px;
+}
+
+.single_product>h2{display: flex;
+justify-content: center;}
+
+.single_product > p {
+  margin: 10px;
+}
+.single_product > img {
+  margin: auto;
+  width: 70%;
+}
+
+.single_product > legend {
+  display: flex;
+  margin: 20px 10px;
+}
+
+.single_product > select {
+  height: 40px;
+  width: 60%;
+  margin: 10px;
+  
+}
+
+.single_product>select>option{font-size: 1.5em;}
+
+
+.product_icon{font-size: 3em;
+border-radius: 50%;
+margin: 10px;}
+
+/* footer styling layout and posistion */
+
+.contact,
+.about {
+  margin: 10px;
+}
+
+footer {
+  background-color: var(--primary-color);
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact > .icon {
+  font-size: 1em;
+}
+.phone,
+.email,
+.social_media {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social_icon {
+  position: relative;
+  top: 14px;
+  margin: 5px;
+}
+
+.phone > .icon,
+.email > .icon,
+.social_media > .icon {
+  font-size: 1em;
+}
+
+@media (min-width: 900px) {
+  h1 {
+    display: flex;
+    justify-content: center;
+  }
+  .logo {
+    min-width: 250px;
+    display: flex;
+    margin: 10px;
+    position: relative;
+  }
+  nav {
+    display: inline;
+  }
+
+  .hamburger-label {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+  }
+  nav li {
+    padding: 10px;
+  }
+
+  .search_field > input {
+    width: 400px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  header {
+    min-height: 180px;
+    background-color: var(--primary-color);
+    margin: 10px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  .search_field {
+    position: relative;
+    margin: auto;
+    top: -14px;
+  }
+
+  .icon_header {
+    margin: auto;
+    position: relative;
+    top: 65px;
+  }
+
+  .about {
+    position: sticky;
+    left: 1640px;
+  }
+
+  nav {
+    margin: auto;
+  }
+
+  .recomended {
+    display: flex;
+    justify-content: start;
+  }
+
+  .single_product {
+    justify-content: start;
+  }
+
+  select[id="game_platform"] {
+    max-width: 60%;
+    display: flex;
+    margin: 10px;
+  }
+}
+
+/* refrences 
+  https://markheath.net/post/font-awesome-circle-background (for å få avlange iconer runde)
+  
+  
+  */

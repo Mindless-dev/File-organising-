@@ -1,80 +1,166 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>game hub</title>
-    <meta name="game hub" content="game page, used ,new and preorder" />
+    <title>game hub search results</title>
+    <meta name="game hub search results" content="search results for game hub" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/search_results.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+      integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
+      <a href="index.html">
+        <img
+          src="images/logo/GameHub_Logo.png"
+          alt="Game Hub Logo"
+          class="logo"
+      /></a>
+      <label class="hamburger-label" for="hamburger-menu"
+        ><i class="fas fa-bars"></i>
+      </label>
+      <input type="checkbox" id="hamburger-menu" />
+      
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li>
+            <a class="current" href="index.html" class="active">Home</a>
+          </li>
           <li><a href="newreleases.html">New Releases</a></li>
-          <li><a href="Games.html">Games</a></li>
           <li><a href="USEDGames.html"> Used Games</a></li>
+          <li><a href="Games.html">Games</a></li>
           <li><a href="log_in.html">Log in</a></li>
         </ul>
       </nav>
+      
+      <div class="icons">
+        <a href="account.html"><i class="icon_header account fas fa-user"></i></a>
+        <a href="account.html"><i class="icon_header far fa-heart"></i></a>
+        <a href="checkout.html"><i class="icon_header fa fa-shopping-cart"></i></a>
+      </div>
+      <section class="search_field">
+        <label for="Search"></label>
+        <input type="Search" />
+        <a href="search results.html"
+          ><i class="current search_icon fas fa-search"></i
+        ></a>
+      </section>
     </header>
 
     <main>
-      <h1>SEARCH results</h1>
-      <menu type="toolbar">showing search results for "game"</menu>
-      <menu type="toolbar">showing x results of x</menu>
-      <MENU><LABEL>sort by</LABEL></MENU>
-      
+      <h1>SEARCH RESULTS</h1>
+      <form >
+      <fieldset><legend>Showing results 4 for: Assasin's creed</legend>
+      <label for="search">Search for</label>
+      <input type="text" name="search" id="search" class="form_input">
+      <label for="sort by">Sort by</label>
+      <select name=sortby id="sort_by" name="sort by"  class="form_input">  
+        <option value="Most relevant">Most relevant</option>
+        <option value="Only New Games">Only New Games</option>
+        <option value="Only Used Games">Only Used Games</option>
+        <option value="Lowest Price">Lowest Price</option>
+        <option value="Highest Price">Highest Price</option>
+        <option value="Newest relases">Newest relases</option>
+       </select>
+        <input type="submit" value="Search">
+      </form>
+        </fieldset>
+        <fieldset> <legend>product results</legend>
+          <section class="product">
+            <a href="product_page.html"><img src="images/product/ACValhalla game cover 1.jpg" alt="assasin's creed: valhall; game cover viking standing in front of ships"></a>
+            <div class="product_description">
+            <h2>Game title</h2>
+            <p>State: New</p>
+            <p>Price: 60 dollars</p>
+            <p>age: 18+</p>
+            </div>
+            <div class="icons_product">
+            <i class="icon far fa-heart"></i>
+            <i class="icon fa fa-shopping-cart"></i>
+            </div>
+          </section>
 
-      <h2>Game title</h2>
-      <label for="state of game">State</label>
-      <div>
-      <label for="state of game">Price</label>
-      <div>
-      <label for="state of game">Platform</label>
-      <div>
-      <label for="state of game">Age</label>
-      <label for="information">information</label>
-      <div>
-      <a href="game product page.html"><button>information</button></a>
-      <a href="game product page.html"><button>Favorite</button></a>
-      <a href="game product page.html"><button>Add to Cart</button></a>
+          <section class="product">
+            <a href="product_page.html"><img src="images/product/ACValhalla game cover 1.jpg" alt="assasin's creed: valhall; game cover viking standing in front of ships"></a>
+            <div class="product_description">
+            <h2>Game title</h2>
+            <p>State: New</p>
+            <p>Price: 60 dollars</p>
+            <p>age: 18+</p>
+            </div>
+            <div class="icons_product">
+            <i class="icon far fa-heart"></i>
+            <i class="icon fa fa-shopping-cart"></i>
+            </div>
+          </section>
 
-      <h2>Game title</h2>
-      <label for="state of game">State</label>
-      <div>
-      <label for="state of game">Price</label>
-      <div>
-      <label for="state of game">Platform</label>
-      <div>
-      <label for="state of game">Age</label>
-      <div> <a href="game product page.html"><button>information</button></a>
-        <a href="game product page.html"><button>Favorite</button></a>
-        <a href="game product page.html"><button>Add to Cart</button></a>
+          <section class="product">
+            <a href="product_page.html"><img src="images/product/ACValhalla game cover 1.jpg" alt="assasin's creed: valhall; game cover viking standing in front of ships"></a>
+            <div class="product_description">
+            <h2>Game title</h2>
+            <p>State: New</p>
+            <p>Price: 60 dollars</p>
+            <p>age: 18+</p>
+            </div>
+            <div class="icons_product">
+            <i class="icon far fa-heart"></i>
+            <i class="icon fa fa-shopping-cart"></i>
+            </div>
+          </section>
 
-      
-      <h2>Game title</h2>
-      <label for="state of game">State</label>
-      <div>
-      <label for="state of game">Price</label>
-      <div>
-      <label for="state of game">Platform</label>
-      <div>
-      <label for="state of game">Age</label>
-      <div>
-        <a href="game product page.html"><button>information</button></a>
-        <a href="game product page.html"><button>Favorite</button></a>
-        <a href="game product page.html"><button>Add to Cart</button></a>
-
-      <p>1 2 3 4 5 6 >></p>
-
-      
-
-      
-       
+          <section class="product">
+            <a href="product_page.html"><img src="images/product/ACValhalla game cover 1.jpg" alt="assasin's creed: valhall; game cover viking standing in front of ships"></a>
+            <div class="product_description">
+            <h2>Game title</h2>
+            <p>State: New</p>
+            <p>Price: 60 dollars</p>
+            <p>age: 18+</p>
+            </div>
+            <div class="icons_product">
+            <i class="icon far fa-heart"></i>
+            <i class="icon fa fa-shopping-cart"></i>
+            </div>
+         
+          </section>
+         
+          </section>
+            <div class="page_number">
+          <a href="search results.html"><p> 1</p></a>
+        </div>
+        </fieldset>
+      </form>
     </main>
-    <footer> Contact us: <br />
-        Phone: 5940943, Email:Gamehub@email <br />socials, icons<br />
-        About us: <br />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.</footer>
+    <footer> 
+      <section class="contact">
+        <h3>Contact us:</h3>
+        <section class="phone">
+          <i class="icon fas fa-phone"></i>
+          <p>123456789</p>
+        </section>
+        <section class="email">
+          <i class="icon far fa-envelope"></i>
+          <p>Gamehub@email</p>
+        </section>
+
+        <section class="social_media">
+          <i class="icon fas fa-globe"></i>
+          <i class="social_icon fab fa-facebook-f"></i>
+          <i class="social_icon fab fa-instagram"></i>
+          <i class="social_icon fab fa-snapchat"></i>
+        </section>
+      </section>
+
+      <section class="about">
+        <h3>About us:</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Repudiandae sed cum reiciendis quo porro ducimus nobis</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Repudiandae sed cum reiciendis quo porro ducimus nobis</p>
+      </section>
+    </footer>
   </body>
 </html>

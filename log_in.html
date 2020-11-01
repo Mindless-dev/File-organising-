@@ -1,42 +1,112 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>game hub</title>
-    <meta name="game hub" content="game page, used ,new and preorder" />
+    <title>game hub log in</title>
+    <meta name="game hub log in" content="log in page for the game site game hub" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/login_styles.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+      integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
+      <a href="index.html">
+        <img
+          src="images/logo/GameHub_Logo.png"
+          alt="Game Hub Logo"
+          class="logo"
+      /></a>
+      <label class="hamburger-label" for="hamburger-menu"
+        ><i class="fas fa-bars"></i>
+      </label>
+      <input type="checkbox" id="hamburger-menu" />
+
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li>
+            <a  href="index.html" >Home</a>
+          </li>
           <li><a href="newreleases.html">New Releases</a></li>
-          <li><a href="Games.html">Games</a></li>
           <li><a href="USEDGames.html"> Used Games</a></li>
-          <li><a href="log_in.html">Log in</a></li>
+          <li><a href="Games.html">Games</a></li>
+          <li><a class="current" href="log_in.html">Log in</a></li>
         </ul>
       </nav>
+
+      <div class="icons">
+        <a href="account.html"
+          ><i class="icon_header account fas fa-user"></i
+        ></a>
+        <a href="account.html"><i class="icon_header far fa-heart"></i></a>
+        <a href="checkout.html"
+          ><i class="icon_header fa fa-shopping-cart"></i
+        ></a>
+      </div>
+      <section class="search_field">
+        <label for="Search"></label>
+        <input type="Search" />
+        <a href="search results.html"
+          ><i class="search_icon fas fa-search"></i
+        ></a>
+      </section>
     </header>
 
     <main>
-      <h1>LOG IN</h1>
-      <label for="Username">username</label>
-      <input type="Username" />
-      <br />
-      <label for="Password">password</label>
-      <input type="password" />
-      <div>
-          <a href="account.html"> <button>Log in</button> </a></li>
-         <a href="new user.html"><button>New User?</button></a></li>
-         <div></div>
-         <label for="remember me ">Remember Me</label>
-         
-         <input type="checkbox" name="Remember me" id="0">
-         <div>
-          <a href="reset password.html">Forgot your password?</a></li>
-         </div>
-          
-       
+      <section class="log_in_screen">
+        <h1>LOG IN</h1>
+        <form method="GET">
+          <fieldset>
+            <div class="input_log_in">
+              <legend>Log In</legend>
+              <label class="form_label" for="username">Username</label>
+              <input
+                type="Name"
+                name="username"
+                id="username"
+                class="form_input"
+              />
+              <label class="form_label" for="password">password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="form_input"
+              />
+            </div>
+            <div class="log_in_buttons">
+              <input
+                type="button"
+                value="log in"
+                id="log_in"
+                class="form_button"
+              />
+              <input
+                type="button"
+                value="sign up"
+                id="sign_up"
+                class="form_button"
+              />
+            </div>
+            <div class="forgotten_password">
+              <a href="forgotten_password.html">Forgotten password?</a>
+            </div>
+            <div class="remember_me">
+              <label class="remember" for="remember_me">remember me</label>
+              <input
+                class="check_box"
+                type="checkbox"
+                name="remember_me"
+                id="remember_me"
+                class="form_input"
+              />
+            </div>
+          </fieldset>
+        </form>
+      </section>
     </main>
     <footer></footer>
   </body>

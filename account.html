@@ -1,63 +1,214 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>game hub</title>
-    <meta name="game hub" content="game page, used ,new and preorder" />
+    <title>game hub account page</title>
+    <meta name="game hub account page" content="account page  game hub" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/account._styles.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+      integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
+      <a href="index.html">
+        <img
+          src="images/logo/GameHub_Logo.png"
+          alt="Game Hub Logo"
+          class="logo"
+      /></a>
+      <label class="hamburger-label" for="hamburger-menu"
+        ><i class="fas fa-bars"></i>
+      </label>
+      <input type="checkbox" id="hamburger-menu" />
+
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" >Home</a></li>
           <li><a href="newreleases.html">New Releases</a></li>
-          <li><a href="Games.html">Games</a></li>
           <li><a href="USEDGames.html"> Used Games</a></li>
-          <li><a href="log_in.html">Log in</a></li>
+          <li><a href="Games.html">Games</a></li>
+          <li><a  href="log_in.html">Log in</a></li>
         </ul>
       </nav>
+
+      <div class="icons">
+        <a href="account.html" > <i  class=" current icon_header account fas fa-user"></i
+        ></a>
+        <a href="account.html"><i class="icon_header far fa-heart"></i></a>
+        <a href="checkout.html"
+          ><i class="icon_header fa fa-shopping-cart"></i
+        ></a>
+      </div>
+      <section class="search_field">
+        <label for="Search"></label>
+        <input type="Search" />
+        <a href="search results.html"
+          ><i class="search_icon fas fa-search"></i
+        ></a>
+      </section>
     </header>
 
     <main>
       <h1>ACCOUNT</h1>
-      <h2>User details</h2>
-      <p>Lorem ipsum dolor sit amet</p>
-      <h2>Publish Game</h2>
-      <label for="Game Title">Game title</label>
-      <input type="Game Title" />
-      <label for="Platform">Platform</label>
-      <input type="Platform" />
-      <label for="Price">Price</label>
-      <input type="Price" />
-      <input type="button" value="Save and Publish" />
 
+      <div class="account_publish">
+        <section class="user_details">
+          <h2>User details</h2>
+          <p>username: user123</p>
+          <p>Email: user123@email</p>
+          <p>card and account number:</p>
+          <p>card</p>
+          <p>account number</p>
+        </section>
+        <section class="publish_game">
+        <form method="POST">
+          <fieldset>
+            <legend><h2>Publish Game</h2></legend>
+            <label for="game title">game title</label>
+            <input type="text" name=game_title id="game title" class=form_input  required/>
+            <label for="platform">Platform:</label>
+            <select name="platform" id="game_platform" class=form_input  required>
+              <option value="pc">PC</option>
+              <option value="playstation_4">Playstation 4</option>
+              <option value="xbox_one">Xbox One</option>
+              <option value="nintendo_switch">Nintendo Switch</option>
+              <option value="other">Other</option>
+            </select>
+            <label for="price">Price</label>
+            <input type="text" name="price" id="price" class=form_input  required/>
+            <input type="submit" value="Publish Game" />
+          </fieldset>
+        </form>
+      </section>
+      </div>
+        
       <h2>Liked Games</h2>
-      <h3>Game title</h3>
-      <p>State:</p>
-      <p>Price</p>
-      <input type="button" value="Add to favourites" />
-      <input type="button" value="Add to Cart" />
-      <input type="button" value="Information" />
+      <section class="liked_games">
+        <section class="product">
+          <h3>Game title</h3>
+          <a href="product_page.html"><img src="images/product/ACValhalla game cover 1.jpg" alt="assassin's creed valhalle game viking standing infront of ships"></a>
+          <p>State:</p>
+          <p>Price</p>
+          <i class="icon far fa-heart"></i>
+          <a href="checkout.html"><i class="icon fa fa-shopping-cart"></i></a>
+        </section>
+
+        <section class="product">
+          <h3>Game title</h3>
+          <a href="product_page.html"><img src="images/product/ACValhalla game cover 1.jpg" alt="assassin's creed valhalle game viking standing infront of ships"></a>
+          <p>State:</p>
+          <p>Price</p>
+          <i class="icon far fa-heart"></i>
+          <a href="checkout.html"><i class="icon fa fa-shopping-cart"></i></a>
+        </section>
+
+        <section class="product">
+          <h3>Game title</h3>
+          <a href="product_page.html"><img src="images/product/ACValhalla game cover 1.jpg" alt="assassin's creed valhalle game viking standing infront of ships"></a>
+          <p>State:</p>
+          <p>Price</p>
+          <i class="icon far fa-heart"></i>
+          <a href="checkout.html"><i class="icon fa fa-shopping-cart"></i></a>
+        </section>
+
+        <section class="product">
+          <h3>Game title</h3>
+          <a href="product_page.html"><img src="images/product/ACValhalla game cover 1.jpg" alt="assassin's creed valhalle game viking standing infront of ships"></a>
+          <p>State:</p>
+          <p>Price</p>
+          <i class="icon far fa-heart"></i>
+          <a href="checkout.html"><i class="icon fa fa-shopping-cart"></i></a>
+        </section>
+      </section>
 
       <h2>reccomended for you</h2>
-      <p>State:</p>
-      <p>Price</p>
-      <input type="button" value="Add to favourites" />
-      <input type="button" value="Add to Cart" />
-      <input type="button" value="Information" />
-
+      <section class="recomended">
+        <section class=product>
+          <h3>Game title</h3>
+          <a href="product_page.html"><img src="images/product/ACValhalla game cover 1.jpg" alt="assassin's creed valhalle game viking standing infront of ships"></a>
+          <p>State:</p>
+          <p>Price</p>
+          <i class="icon far fa-heart"></i>
+          <a href="checkout.html"><i class="icon fa fa-shopping-cart"></i></a>
+      </section>
+        <section class="product">
+          <h3>Game title</h3>
+          <a href="product_page.html"><img src="images/product/ACValhalla game cover 1.jpg" alt="assassin's creed valhalle game viking standing infront of ships"></a>
+          <p>State:</p>
+          <p>Price</p>
+          <i class="icon far fa-heart"></i>
+          <a href="checkout.html"><i class="icon fa fa-shopping-cart"></i></a>
+        </section>
+        <section class="product">
+          <h3>Game title</h3>
+          <a href="product_page.html"><img src="images/product/ACValhalla game cover 1.jpg" alt="assassin's creed valhalle game viking standing infront of ships"></a>
+          <p>State:</p>
+          <p>Price</p>
+          <i class="icon far fa-heart"></i>
+          <a href="checkout.html"><i class="icon fa fa-shopping-cart"></i></a>
+        </section>
+        <section class="product">
+          <h3>Game title</h3>
+          <a href="product_page.html"><img src="images/product/ACValhalla game cover 1.jpg" alt="assassin's creed valhalle game viking standing infront of ships"></a>
+          <p>State:</p>
+          <p>Price</p>
+          <i class="icon far fa-heart"></i>
+          <a href="checkout.html"><i class="icon fa fa-shopping-cart"></i></a>
+        </section>
+      </section>
       <h2>Games you're currently selling</h2>
-      <p>State:</p>
-      <p>Price</p>
-      <input type="button" value="Add to favourites" />
-      <input type="button" value="Edit" />
+      <section class="currently_selling">
+      <section class="product">
+        <h3>game title</h3>
+        <img src="images/product/ghost of tshushima.jpg" alt="ghost of tshushima used">
+        <p>State:</p>
+        <p>Price</p>
+        <input type="button" value="Edit" />
+        <input type="button" value="Delete">
+      </section>
+
+      <section class="product">
+        <h3>game title</h3>
+        <img src="images/product/IMG_20200909_161204.jpg" alt="animal crossin new horizons used">
+        <p>State:</p>
+        <p>Price</p>
+        <input type="button" value="Edit" /> 
+        <input type="button" value="Delete">
+      </section>
     </main>
-    
+
     <footer>
-      Contact us: <br />
-      Phone: 5940943, Email:Gamehub@email <br />socials, icons<br />
-      About us: <br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+      <section class="contact">
+        <h3>Contact us:</h3>
+        <section class="phone">
+          <i class="icon fas fa-phone"></i>
+          <p>123456789</p>
+        </section>
+        <section class="email">
+          <i class="icon far fa-envelope"></i>
+          <p>Gamehub@email</p>
+        </section>
+
+        <section class="social_media">
+          <i class="icon fas fa-globe"></i>
+          <i class="social_icon fab fa-facebook-f"></i>
+          <i class="social_icon fab fa-instagram"></i>
+          <i class="social_icon fab fa-snapchat"></i>
+        </section>
+      </section>
+
+      <section class="about">
+        <h3>About us:</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Repudiandae sed cum reiciendis quo porro ducimus nobis</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Repudiandae sed cum reiciendis quo porro ducimus nobis</p>
+      </section>
     </footer>
   </body>
 </html>
