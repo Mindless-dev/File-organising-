@@ -1,93 +1,149 @@
 <!DOCTYPE html>
 <html>
   <!DOCTYPE html>
-<html>
-  <head>
-    <title>game hub new user</title>
-    <meta name="game hub" content="game hub create new user " />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/new_user.css">
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
-      integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header>
-      <a href="index.html">
-        <img
-          src="images/logo/GameHub_Logo.png"
-          alt="Game Hub Logo"
-          class="logo"
-      /></a>
-      <label class="hamburger-label" for="hamburger-menu"
-        ><i class="fas fa-bars"></i>
-      </label>
-      <input type="checkbox" id="hamburger-menu" />
+  <html>
+    <head>
+      <title>game hub new user</title>
+      <meta name="game hub" content="game hub create new user " />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="styles/new_user.css" />
+      <script
+        defer
+        src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+        integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS"
+        crossorigin="anonymous"
+      ></script>
+      <!-- Hotjar Tracking Code for https://fileorganizing-gamehub-project.netlify.app -->
+      <script>
+        (function (h, o, t, j, a, r) {
+          h.hj =
+            h.hj ||
+            function () {
+              (h.hj.q = h.hj.q || []).push(arguments);
+            };
+          h._hjSettings = { hjid: 2263088, hjsv: 6 };
+          a = o.getElementsByTagName("head")[0];
+          r = o.createElement("script");
+          r.async = 1;
+          r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+          a.appendChild(r);
+        })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+      </script>
+    </head>
+    <body>
+      <header>
+        <a href="index.html">
+          <img
+            src="images/logo/GameHub_Logo.png"
+            alt="Game Hub Logo"
+            class="logo"
+        /></a>
+        <label class="hamburger-label" for="hamburger-menu"
+          ><i class="fas fa-bars"></i>
+        </label>
+        <input type="checkbox" id="hamburger-menu" />
 
-      <nav>
-        <ul>
-          <li><a href="index.html" >Home</a></li>
-          <li><a href="newreleases.html">New Releases</a></li>
-          <li><a href="USEDGames.html"> Used Games</a></li>
-          <li><a href="Games.html">Games</a></li>
-          <li><a  href="log_in.html">Log in</a></li>
-        </ul>
-      </nav>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="newreleases.html">New Releases</a></li>
+            <li><a href="USEDGames.html"> Used Games</a></li>
+            <li><a href="Games.html">Games</a></li>
+            <li><a href="log_in.html">Log in</a></li>
+          </ul>
+        </nav>
 
-      <div class="icons">
-        <a href="account.html" > <i  class=" current icon_header account fas fa-user"></i
-        ></a>
-        <a href="account.html"><i class="icon_header far fa-heart"></i></a>
-        <a href="checkout.html"
-          ><i class="icon_header fa fa-shopping-cart"></i
-        ></a>
-      </div>
-      <section class="search_field">
-        <label for="Search"></label>
-        <input type="Search" />
-        <a href="search results.html"
-          ><i class="search_icon fas fa-search"></i
-        ></a>
-      </section>
-    </header>
+        <div class="icons">
+          <a href="account.html">
+            <i class="current icon_header account fas fa-user"></i
+          ></a>
+          <a href="account.html"><i class="icon_header far fa-heart"></i></a>
+          <a href="checkout.html"
+            ><i class="icon_header fa fa-shopping-cart"></i
+          ></a>
+        </div>
+        <section class="search_field">
+          <label for="Search"></label>
+          <input type="Search" />
+          <a href="search results.html"
+            ><i class="search_icon fas fa-search"></i
+          ></a>
+        </section>
+      </header>
 
-    <main>
-      <h1>NEW USER</h1>
-      <form action="account.html"> 
-        <fieldset>
-          <legend>User Details</legend>
-          <label for="name">User Name</label>
-          <input type="text" name="name" id="name"  class="form_input" required>
-          <label for="email">Email</label>
-          <input type="email"name="email" id="email"class="form_input" required>
-          <label for="password">password</label>
-          <input type="password" name="password" id=password class="form_input" required>
-          <label for="repeat_password">Confirm Password</label>
-          <input type="password" name="password" id= repeat_password class="form_input" required>
-          <label for="address">Street address</label>
-          <input type="text" name="address" id=address class="form_input">
-          <label for="area_code">Area Code</label>
-          <input type="text"  id="area_code" class="form_input">
-        
-        
-        <legend>Card Details (Optional)</legend>
-        <label for="card_number">Card number</label>
-        <input type="text" name="card_number" id="card_number"  class="form_input">
-        <label for="expiry_date">Expiry date</label>
-        <input type="date"  name="expiry_date" id="expiry_date" class="form_input">
-        <label for="cvc">CVC</label>
-        <input type="text" name="cvc" id="cvc"  class="form_input">
-     
-      
-        <legend>Account Number</legend>
-        <label for="account_number">Your Account Number</label>
-        <input type="text" name="account_number" id="account_number"  class="form_input" >
-        <input type="submit" value="Create User">
-      </fieldset></form>
-    </main>
-    <footer></footer>
-  </body>
+      <main>
+        <h1>NEW USER</h1>
+        <form action="account.html">
+          <fieldset>
+            <legend>User Details</legend>
+            <label for="name">User Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form_input"
+              required
+            />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form_input"
+              required
+            />
+            <label for="password">password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="form_input"
+              required
+            />
+            <label for="repeat_password">Confirm Password</label>
+            <input
+              type="password"
+              name="password"
+              id="repeat_password"
+              class="form_input"
+              required
+            />
+            <label for="address">Street address</label>
+            <input type="text" name="address" id="address" class="form_input" />
+            <label for="area_code">Area Code</label>
+            <input type="text" id="area_code" class="form_input" />
+
+            <legend>Card Details (Optional)</legend>
+            <label for="card_number">Card number</label>
+            <input
+              type="text"
+              name="card_number"
+              id="card_number"
+              class="form_input"
+            />
+            <label for="expiry_date">Expiry date</label>
+            <input
+              type="date"
+              name="expiry_date"
+              id="expiry_date"
+              class="form_input"
+            />
+            <label for="cvc">CVC</label>
+            <input type="text" name="cvc" id="cvc" class="form_input" />
+
+            <legend>Account Number</legend>
+            <label for="account_number">Your Account Number</label>
+            <input
+              type="text"
+              name="account_number"
+              id="account_number"
+              class="form_input"
+            />
+            <input type="submit" value="Create User" />
+          </fieldset>
+        </form>
+      </main>
+      <footer></footer>
+    </body>
+  </html>
 </html>
