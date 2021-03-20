@@ -3,9 +3,10 @@
   <!DOCTYPE html>
   <html>
     <head>
-      <title>game hub new user</title>
-      <meta name="game hub" content="game hub create new user " />
+      <title>game hub | new user</title>
+      <meta name="description" content="game hub create new user " />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="styles/globalStyles.css">
       <link rel="stylesheet" href="styles/new_user.css" />
       <script
         defer
@@ -40,10 +41,9 @@
 
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="newreleases.html">New Releases</a></li>
-            <li><a href="USEDGames.html"> Used Games</a></li>
-            <li><a href="Games.html">Games</a></li>
+            <li><a href="newReleases.html">New Releases</a></li>
+            <li><a href="usedGames.html"> Used Games</a></li>
+            <li><a href="games.html">Games</a></li>
             <li><a href="log_in.html">Log in</a></li>
           </ul>
         </nav>
@@ -53,61 +53,75 @@
             <i class="current icon_header account fas fa-user"></i
           ></a>
           <a href="account.html"><i class="icon_header far fa-heart"></i></a>
-          <a href="checkout.html"
-            ><i class="icon_header fa fa-shopping-cart"></i
-          ></a>
+
+          <a class="test" href="checkout.html">
+            <span class="layer fa-layers fa-fw">
+            <i class="icon_header_shopping fa fa-shopping-cart"></i>
+            <span class="icon_counter fa-layers-counter">1</span>
+          </a>
         </div>
         <section class="search_field">
           <label for="Search"></label>
           <input type="Search" />
-          <a href="search results.html"
+          <a href="search_results.html"
             ><i class="search_icon fas fa-search"></i
           ></a>
         </section>
       </header>
 
       <main>
-        <h1>NEW USER</h1>
-        <form action="account.html">
+        <h1>New User</h1>
+        <form action="account.html"  id="newUserform">
           <fieldset>
-            <legend>User Details</legend>
-            <label for="name">User Name</label>
+            <legend><h2>User Details</h2></legend>
+          <div class="form_layout">
+            <div>
+            <label for="name">User Name* (minimum 3 characters)</label>
             <input
               type="text"
               name="name"
               id="name"
               class="form_input"
-              required
+              
             />
-            <label for="email">Email</label>
+            <p class="error" id="nameError">Username must be minimum of 3 characters</p>
+
+            <label for="email">Email*</label>
             <input
               type="email"
               name="email"
               id="email"
               class="form_input"
-              required
+              
             />
-            <label for="password">password</label>
+            <p class="error" id=emailError>Please insert a email</p>
+            <label for="password">Password *</label>
+            <p class="pasword_requirements">A password must contain atleast 1 lowercase letter, 1 uppercase letter, 1 number, and be at least 8 characters long </p>
             <input
               type="password"
               name="password"
               id="password"
               class="form_input"
-              required
+              
             />
-            <label for="repeat_password">Confirm Password</label>
+            <p class="error" id="passwordError"> Please follow instructions above on how to create a valid password</p>
+            <label for="repeat_password">Confirm Password * </label>
             <input
               type="password"
               name="password"
               id="repeat_password"
               class="form_input"
-              required
             />
-            <label for="address">Street address</label>
-            <input type="text" name="address" id="address" class="form_input" />
-            <label for="area_code">Area Code</label>
-            <input type="text" id="area_code" class="form_input" />
+            <p class="error" id="repeat_passwordError">Passwords does not match</p>
 
+            <label for="address">Street address* (minimum 13 characters)</label>
+            <input type="text" name="address" id="address" class="form_input" />
+            <p class=error id="adressError">Address must be minimum 13 characters long</p>
+            <label for="area_code">Area Code*(4 characters)</label>
+            <input type="text" id="area_code" class="form_input" />
+            <p class="error" id="area_codeError">Please insert area code 4 characters </p>
+            </div>
+            <div>
             <legend>Card Details (Optional)</legend>
             <label for="card_number">Card number</label>
             <input
@@ -116,7 +130,7 @@
               id="card_number"
               class="form_input"
             />
-            <label for="expiry_date">Expiry date</label>
+            <label for="expiry_date">Expiry Date</label>
             <input
               type="date"
               name="expiry_date"
@@ -126,7 +140,7 @@
             <label for="cvc">CVC</label>
             <input type="text" name="cvc" id="cvc" class="form_input" />
 
-            <legend>Account Number</legend>
+            <legend>Account Number (Optional)</legend>
             <label for="account_number">Your Account Number</label>
             <input
               type="text"
@@ -134,11 +148,14 @@
               id="account_number"
               class="form_input"
             />
-            <input type="submit" value="Create User" />
+            </div>
+          </div>
+          <input type="submit" value="create user"/>
           </fieldset>
         </form>
       </main>
       <footer></footer>
     </body>
+    <script src="js/new_user_form.js"></script>
   </html>
 </html>

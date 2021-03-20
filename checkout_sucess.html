@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>game hub | log in</title>
-    <meta name="description" content="log in page for the game site game hub" />
+    <title>game hub | check out sucess</title>
+    <meta name="description" content="game hub checkout sucess page" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/globalStyles.css" />
-    <link rel="stylesheet" href="styles/login_styles.css" />
+    <link rel="stylesheet" href="styles/payment_sucess.css" />
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
@@ -50,7 +50,7 @@
           <li><a href="newReleases.html">New Releases</a></li>
           <li><a href="usedGames.html"> Used Games</a></li>
           <li><a href="games.html">Games</a></li>
-          <li><a class="current" href="log_in.html">Log in</a></li>
+          <li><a href="log_in.html">Log in</a></li>
         </ul>
       </nav>
 
@@ -59,11 +59,9 @@
           ><i class="icon_header account fas fa-user"></i
         ></a>
         <a href="account.html"><i class="icon_header far fa-heart"></i></a>
-        <a class="test" href="checkout.html">
-          <span class="layer fa-layers fa-fw">
-          <i class="icon_header_shopping fa fa-shopping-cart"></i>
-          <span class="icon_counter fa-layers-counter">1</span>
-        </a>
+        <a href="checkout.html" class="active"
+          ><i class="current icon_header fa fa-shopping-cart"></i
+        ></a>
       </div>
       <section class="search_field">
         <label for="Search"></label>
@@ -75,59 +73,21 @@
     </header>
 
     <main>
-      <section class="log_in_screen">
-        <h1>Log In</h1>
-        <form method="GET">
-          <fieldset>
-            <div class="input_log_in">
-              <legend>Log In</legend>
-              <label class="form_label" for="username">Username</label>
-              <input
-                type="Name"
-                name="username"
-                id="username"
-                class="form_input"
-              />
-              <label class="form_label" for="password">password</label>
-              <input
-                type="password"
-                name="password"
-                id="password"
-                class="form_input"
-              />
-            </div>
-            <div class="log_in_buttons">
-              <input
-                type="button"
-                value="log in"
-                id="log_in"
-                class="form_button"
-              />
-              <input
-                type="button"
-                value="sign up"
-                id="sign_up"
-                class="form_button"
-              />
-            </div>
-            <div class="forgotten_password">
-              <a href="forgotten_password.html">Forgotten password?</a>
-            </div>
-            <div class="remember_me">
-              <label class="remember" for="remember_me">remember me</label>
-              <input
-                class="check_box"
-                type="checkbox"
-                name="remember_me"
-                id="remember_me"
-                class="form_input"
-              />
-            </div>
-          </fieldset>
-        </form>
+      <h1>Payment Success</h1>
+      <section class="payment_sucess_card">
+        <h2>Assasin's Creed : Valhalla</h2>
+        <img
+          src="images/product/ACValhalla game cover 1.jpg"
+          alt="assasin's creed: valhalla game"
+        />
+        <p>Platform: Playstation 4</p>
+        <p>State: NEW</p>
+        <p>Reciept sent to your email address: Customer@email.com</p>
+        <p>total amount: 60 dollars</p>
       </section>
+      <a class="home_button" href="index.html"> Back to Home page</a>
     </main>
+
     <footer></footer>
   </body>
-  <script src="js/log_in.js"></script>
 </html>

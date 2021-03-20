@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>game hub account page</title>
-    <meta name="game hub account page" content="account page  game hub" />
+    <title>game hub | account page</title>
+    <meta name="description" content="account page  game hub" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/globalStyles.css">
     <link rel="stylesheet" href="styles/account._styles.css" />
     <script
       defer
@@ -42,8 +43,8 @@
       <nav>
         <ul>
           <li><a href="index.html" >Home</a></li>
-          <li><a href="newreleases.html">New Releases</a></li>
-          <li><a href="USEDGames.html"> Used Games</a></li>
+          <li><a href="newReleases.html">New Releases</a></li>
+          <li><a href="usedGames.html"> Used Games</a></li>
           <li><a href="Games.html">Games</a></li>
           <li><a  href="log_in.html">Log in</a></li>
         </ul>
@@ -53,30 +54,32 @@
         <a href="account.html" > <i  class=" current icon_header account fas fa-user"></i
         ></a>
         <a href="account.html"><i class="icon_header far fa-heart"></i></a>
-        <a href="checkout.html"
-          ><i class="icon_header fa fa-shopping-cart"></i
-        ></a>
+        <a class="test" href="checkout.html">
+          <span class="layer fa-layers fa-fw">
+          <i class="icon_header_shopping fa fa-shopping-cart"></i>
+          <span class="icon_counter fa-layers-counter">1</span>
+        </a>
       </div>
       <section class="search_field">
         <label for="Search"></label>
         <input type="Search" />
-        <a href="search results.html"
+        <a href="search_results.html"
           ><i class="search_icon fas fa-search"></i
         ></a>
       </section>
     </header>
 
     <main>
-      <h1>ACCOUNT</h1>
+      <h1>Account</h1>
 
       <div class="account_publish">
         <section class="user_details">
           <h2>User details</h2>
-          <p>username: user123</p>
+          <p>Username: user123</p>
           <p>Email: user123@email</p>
-          <p>card and account number:</p>
-          <p>card</p>
-          <p>account number</p>
+          <p>Card and account number:</p>
+          <p>Card</p>
+          <p>Account number</p>
         </section>
         <section class="publish_game">
         <form method="POST">
@@ -104,94 +107,185 @@
       <section class="liked_games">
         <section class="product">
           <h3>Game title</h3>
-          <a href="product_page.html"><img src="images/product/ACValhalla game cover 1.jpg" alt="assassin's creed valhalle game viking standing infront of ships"></a>
-          <p>State:</p>
-          <p>Price</p>
+          <a href="product_page.html"
+            ><img
+              src="images/product/ACValhalla game cover 1.jpg"
+              alt="assassin's creed valhalle game viking standing infront of ships"
+          /></a>
+          <section class="product_description">
+          <p>Platform: PS4</p>
+          <p>State: NEW</p>
+          <p>Price: 60 dollars</p>
+          <p>Age: 18+</p>
+          </section>
+          <div class="product_buttons">
           <i class="icon far fa-heart"></i>
-          <a href="checkout.html"><i class="icon fa fa-shopping-cart"></i></a>
+          <button class="addToCart" id="addToCart"><i class="fa fa-shopping-cart"></i></button>
+        </div>
         </section>
-
         <section class="product">
           <h3>Game title</h3>
-          <a href="product_page.html"><img src="images/product/ACValhalla game cover 1.jpg" alt="assassin's creed valhalle game viking standing infront of ships"></a>
-          <p>State:</p>
-          <p>Price</p>
+          <a href="product_page.html"
+            ><img
+              src="images/product/ACValhalla game cover 1.jpg"
+              alt="assassin's creed valhalle game viking standing infront of ships"
+          /></a>
+          <section class="product_description">
+          <p>Platform: PS4</p>
+          <p>State: NEW</p>
+          <p>Price: 60 dollars</p>
+          <p>Age: 18+</p>
+          </section>
+          <div class="product_buttons">
           <i class="icon far fa-heart"></i>
-          <a href="checkout.html"><i class="icon fa fa-shopping-cart"></i></a>
+          <button class="addToCart" id="addToCart"><i class="fa fa-shopping-cart"></i></button>
+        </div>
         </section>
-
         <section class="product">
           <h3>Game title</h3>
-          <a href="product_page.html"><img src="images/product/ACValhalla game cover 1.jpg" alt="assassin's creed valhalle game viking standing infront of ships"></a>
-          <p>State:</p>
-          <p>Price</p>
+          <a href="product_page.html"
+            ><img
+              src="images/product/ACValhalla game cover 1.jpg"
+              alt="assassin's creed valhalle game viking standing infront of ships"
+          /></a>
+          <section class="product_description">
+          <p>Platform: PS4</p>
+          <p>State: NEW</p>
+          <p>Price: 60 dollars</p>
+          <p>Age: 18+</p>
+          </section>
+          <div class="product_buttons">
           <i class="icon far fa-heart"></i>
-          <a href="checkout.html"><i class="icon fa fa-shopping-cart"></i></a>
+          <button class="addToCart" id="addToCart"><i class="fa fa-shopping-cart"></i></button>
+        </div>
         </section>
-
         <section class="product">
           <h3>Game title</h3>
-          <a href="product_page.html"><img src="images/product/ACValhalla game cover 1.jpg" alt="assassin's creed valhalle game viking standing infront of ships"></a>
-          <p>State:</p>
-          <p>Price</p>
+          <a href="product_page.html"
+            ><img
+              src="images/product/ACValhalla game cover 1.jpg"
+              alt="assassin's creed valhalle game viking standing infront of ships"
+          /></a>
+          <section class="product_description">
+          <p>Platform: PS4</p>
+          <p>State: NEW</p>
+          <p>Price: 60 dollars</p>
+          <p>Age: 18+</p>
+          </section>
+          <div class="product_buttons">
           <i class="icon far fa-heart"></i>
-          <a href="checkout.html"><i class="icon fa fa-shopping-cart"></i></a>
+          <button class="addToCart" id="addToCart"><i class="fa fa-shopping-cart"></i></button>
+        </div>
         </section>
+
+       
       </section>
 
-      <h2>reccomended for you</h2>
+      <h2>Reccomended for you</h2>
       <section class="recomended">
-        <section class=product>
-          <h3>Game title</h3>
-          <a href="product_page.html"><img src="images/product/ACValhalla game cover 1.jpg" alt="assassin's creed valhalle game viking standing infront of ships"></a>
-          <p>State:</p>
-          <p>Price</p>
-          <i class="icon far fa-heart"></i>
-          <a href="checkout.html"><i class="icon fa fa-shopping-cart"></i></a>
-      </section>
         <section class="product">
           <h3>Game title</h3>
-          <a href="product_page.html"><img src="images/product/ACValhalla game cover 1.jpg" alt="assassin's creed valhalle game viking standing infront of ships"></a>
-          <p>State:</p>
-          <p>Price</p>
+          <a href="product_page.html"
+            ><img
+              src="images/product/ACValhalla game cover 1.jpg"
+              alt="assassin's creed valhalle game viking standing infront of ships"
+          /></a>
+          <section class="product_description">
+          <p>Platform: PS4</p>
+          <p>State: NEW</p>
+          <p>Price: 60 dollars</p>
+          <p>Age: 18+</p>
+          </section>
+          <div class="product_buttons">
           <i class="icon far fa-heart"></i>
-          <a href="checkout.html"><i class="icon fa fa-shopping-cart"></i></a>
+          <button class="addToCart" id="addToCart"><i class="fa fa-shopping-cart"></i></button>
+        </div>
         </section>
+
         <section class="product">
           <h3>Game title</h3>
-          <a href="product_page.html"><img src="images/product/ACValhalla game cover 1.jpg" alt="assassin's creed valhalle game viking standing infront of ships"></a>
-          <p>State:</p>
-          <p>Price</p>
+          <a href="product_page.html"
+            ><img
+              src="images/product/ACValhalla game cover 1.jpg"
+              alt="assassin's creed valhalle game viking standing infront of ships"
+          /></a>
+          <section class="product_description">
+          <p>Platform: PS4</p>
+          <p>State: NEW</p>
+          <p>Price: 60 dollars</p>
+          <p>Age: 18+</p>
+          </section>
+          <div class="product_buttons">
           <i class="icon far fa-heart"></i>
-          <a href="checkout.html"><i class="icon fa fa-shopping-cart"></i></a>
+          <button class="addToCart" id="addToCart"><i class="fa fa-shopping-cart"></i></button>
+        </div>
         </section>
+
         <section class="product">
           <h3>Game title</h3>
-          <a href="product_page.html"><img src="images/product/ACValhalla game cover 1.jpg" alt="assassin's creed valhalle game viking standing infront of ships"></a>
-          <p>State:</p>
-          <p>Price</p>
+          <a href="product_page.html"
+            ><img
+              src="images/product/ACValhalla game cover 1.jpg"
+              alt="assassin's creed valhalle game viking standing infront of ships"
+          /></a>
+          <section class="product_description">
+          <p>Platform: PS4</p>
+          <p>State: NEW</p>
+          <p>Price: 60 dollars</p>
+          <p>Age: 18+</p>
+          </section>
+          <div class="product_buttons">
           <i class="icon far fa-heart"></i>
-          <a href="checkout.html"><i class="icon fa fa-shopping-cart"></i></a>
+          <button class="addToCart" id="addToCart"><i class="fa fa-shopping-cart"></i></button>
+        </div>
         </section>
+
+        <section class="product">
+          <h3>Game title</h3>
+          <a href="product_page.html"
+            ><img
+              src="images/product/ACValhalla game cover 1.jpg"
+              alt="assassin's creed valhalle game viking standing infront of ships"
+          /></a>
+          <section class="product_description">
+          <p>Platform: PS4</p>
+          <p>State: NEW</p>
+          <p>Price: 60 dollars</p>
+          <p>Age: 18+</p>
+          </section>
+          <div class="product_buttons">
+          <i class="icon far fa-heart"></i>
+          <button class="addToCart" id="addToCart"><i class="fa fa-shopping-cart"></i></button>
+        </div>
+        </section>
+      
       </section>
       <h2>Games you're currently selling</h2>
       <section class="currently_selling">
       <section class="product">
         <h3>game title</h3>
         <img src="images/product/ghost of tshushima.jpg" alt="ghost of tshushima used">
-        <p>State:</p>
-        <p>Price</p>
-        <input type="button" value="Edit" />
-        <input type="button" value="Delete">
+        <section class="product_description">
+        <p>State: Used</p>
+        <p>Price: 40 Dollars</p>
+        </section>
+        <div class="option_buttons">
+        <input class="option_button" type="button" value="Edit" />
+        <input class="option_button" type="button" value="Delete">
+        </div>
       </section>
 
       <section class="product">
         <h3>game title</h3>
-        <img src="images/product/IMG_20200909_161204.jpg" alt="animal crossin new horizons used">
-        <p>State:</p>
-        <p>Price</p>
-        <input type="button" value="Edit" /> 
-        <input type="button" value="Delete">
+        <img src="images/product/IMG_20200909_161204.jpg" alt="animal crossing new horizons used">
+        <section class="product_description">
+        <p>State: Used </p>
+        <p>Price: 30 dollars</p>
+      </section>
+      <div class=option_buttons>
+        <input class="option_button" type="button" value="Edit" /> 
+        <input class="option_button" type="button" value="Delete">
+      </div>
       </section>
     </main>
 
@@ -225,4 +319,5 @@
       </section>
     </footer>
   </body>
+  <script src="js/cart.js"></script>
 </html>
