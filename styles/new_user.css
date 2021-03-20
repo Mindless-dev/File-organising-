@@ -53,9 +53,6 @@ input[type="submit"] {
   margin: 10px;
 }
 
-input[type="submit"] > value {
-  display: flex;
-}
 input[type="submit"]:hover {
   color: black;
   background-color: var(--hover-color);
