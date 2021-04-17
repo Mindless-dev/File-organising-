@@ -22,6 +22,11 @@
   display: none;
 }
 
+.errorMessage {
+  color: red;
+  font-size: 18px;
+}
+
 .pasword_requirements {
   margin: 10px;
   max-width: 490px;

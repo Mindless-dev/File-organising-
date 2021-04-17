@@ -1,4 +1,5 @@
 /* main styling and posistion*/
+
 .addToCart {
   box-shadow: none;
   font-size: 1.4em;
@@ -17,7 +18,7 @@
 .product_description {
   display: flex;
   flex-direction: column;
-  margin: 10px auto;
+  margin-left: 10px;
 }
 
 .product_buttons {
@@ -61,6 +62,7 @@ h3 {
 .single_product > h2 {
   display: flex;
   justify-content: center;
+  margin: 10px;
 }
 
 .single_product > p {
@@ -113,6 +115,17 @@ h3 {
 
 .addToCart_product:hover {
   border: solid var(--hover-color) 2px;
+}
+
+.icons_product {
+  display: flex;
+  justify-content: center;
+}
+
+.product > h3 {
+  margin: 10px;
+  justify-content: start;
+  font-size: 1.2em;
 }
 
 /* footer styling layout and posistion */

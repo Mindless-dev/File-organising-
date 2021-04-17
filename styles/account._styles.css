@@ -21,7 +21,7 @@
 .product_description {
   display: flex;
   flex-direction: column;
-  margin: 10px auto;
+  margin: 10px;
 }
 .account_publish {
   display: flex;
@@ -30,8 +30,7 @@
 }
 
 .product_description > p {
-  margin: auto 0px;
-  justify-content: center;
+  margin: 0px;
 }
 
 .product_buttons {
@@ -148,6 +147,14 @@ fieldset > input[type="submit"]:hover,
   width: 90px;
   box-shadow: 0px 3px 6px #272f59bc;
   margin: 10px;
+}
+
+.product > h3 {
+  display: block;
+}
+.product > .icons_product {
+  display: flex;
+  margin: auto;
 }
 
 /* animation  product picture */

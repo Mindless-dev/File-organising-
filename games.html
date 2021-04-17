@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>game hub | product page</title>
-    <meta name="description" content="product page game hub" />
+    <title>game hub | checkout page</title>
+    <meta name="description" content="game hub checkout page" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/globalStyles.css" />
-    <link rel="stylesheet" href="styles/product_page.css" />
+    <link rel="stylesheet" href="styles/globalStyles.css"/>
+    <link rel="stylesheet" href="styles/game_styles.css">
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
@@ -45,9 +45,9 @@
       <nav>
         <ul>
           <li>
-            <a href="index.html">Home</a>
+            <a href="index.html" class="active">Home</a>
           </li>
-          <li><a href="newReleases.html">New Releases</a></li>
+          <li><a href="newreleases.html">New Releases</a></li>
           <li><a href="usedGames.html"> Used Games</a></li>
           <li><a href="games.html">Games</a></li>
           <li><a href="log_in.html">Log in</a></li>
@@ -75,46 +75,42 @@
     </header>
 
     <main>
-      <h1>Product Page</h1>
-      <div class="product_recommended">
-        <section class="single_product">loading...</section>
-        
-        <h3>Reccomended for you</h3>
-        <section class="recomended">
+      <h1>Game page</h1>
+
+      <div class="productContainer">
           <p>Loading...</p>
-        </section>
       </div>
     </main>
-
     <footer>
-      <section class="contact">
-        <h3>Contact us:</h3>
-        <section class="phone">
-          <i class="icon fas fa-phone"></i>
-          <p>123456789</p>
-        </section>
-        <section class="email">
-          <i class="icon far fa-envelope"></i>
-          <p>Gamehub@email</p>
-        </section>
 
-        <section class="social_media">
-          <i class="icon fas fa-globe"></i>
-          <i class="social_icon fab fa-facebook-f"></i>
-          <i class="social_icon fab fa-instagram"></i>
-          <i class="social_icon fab fa-snapchat"></i>
+        <section class="contact">
+          <h3>Contact us:</h3>
+          <section class="phone">
+            <i class="icon fas fa-phone"></i>
+            <p>123456789</p>
+          </section>
+          <section class="email">
+            <i class="icon far fa-envelope"></i>
+            <p>Gamehub@email</p>
+          </section>
+  
+          <section class="social_media">
+            <i class="icon fas fa-globe"></i>
+            <i class="social_icon fab fa-facebook-f"></i>
+            <i class="social_icon fab fa-instagram"></i>
+            <i class="social_icon fab fa-snapchat"></i>
+          </section>
         </section>
-      </section>
-
-      <section class="about">
-        <h3>About us:</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <p>Repudiandae sed cum reiciendis quo porro ducimus nobis</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <p>Repudiandae sed cum reiciendis quo porro ducimus nobis</p>
-      </section>
-    </footer>
-    <script src="js/product_detailed.js"></script>
-    <script src="js/cart.js"></script>
+  
+        <section class="about">
+          <h3>About us:</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Repudiandae sed cum reiciendis quo porro ducimus nobis</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Repudiandae sed cum reiciendis quo porro ducimus nobis</p>
+        </section>
+      </footer>
   </body>
+  <script src="js/cart.js"></script>
+  <script src="js/game_page.js"></script>
 </html>

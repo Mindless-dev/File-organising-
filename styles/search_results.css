@@ -1,4 +1,17 @@
 /* main styling*/
+h2 {
+  margin-top: 20px;
+}
+.search_bar > label {
+  margin: 26px 10px 10px 10px;
+}
+.product > h3 {
+  display: flex;
+  font-size: 1em;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .page {
   color: white;
@@ -29,14 +42,6 @@ fieldset {
   justify-content: center;
 }
 
-.product > a > img {
-  display: flex;
-  margin: auto;
-  width: 140px;
-  height: 190px;
-  margin-top: 10px;
-}
-
 .icons_product {
   display: flex;
   flex-direction: row;
@@ -47,10 +52,10 @@ fieldset {
 .product_description {
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin-left: 10px;
 }
 .product_description > p {
-  margin: 0px 10px;
+  margin: 0px;
 }
 
 input[type="text"],
@@ -64,9 +69,6 @@ select {
   font-size: 1.3em;
 }
 
-label {
-  margin: 15px;
-}
 .search_bar {
   border-radius: 10px;
   background-color: var(--primary-color);
@@ -138,12 +140,12 @@ fieldset {
     flex-wrap: wrap;
   }
 
-  .product > a > img {
+  /* .product > a > img {
     width: 140px;
     height: 190px;
     display: flex;
     margin: 25px auto;
-  }
+  }*/
 
   .product > a > img:hover {
     box-shadow: var(--secondary-color) 0px 3px 6px;
@@ -154,15 +156,10 @@ fieldset {
     flex-direction: row;
     margin: 10px;
   }
-  .product_description {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-  }
 
-  .product_description > p {
+  /*.product_description > p {
     margin: 0px 10px;
-  }
+  }*/
 
   .search_bar {
     display: flex;
@@ -171,10 +168,6 @@ fieldset {
 
   button {
     margin: 10px;
-  }
-
-  label {
-    margin-top: 26px;
   }
 }
 

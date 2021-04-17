@@ -9,5 +9,6 @@ function addToCart() {
 }
 
 for (let i = 0; i < cartButton.length; i++) {
+  console.log(cartButton[i]);
   cartButton[i].addEventListener("click", addToCart);
 }
