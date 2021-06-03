@@ -37,20 +37,16 @@
           alt="Game Hub Logo"
           class="logo"
       /></a>
-      <label class="hamburger-label" for="hamburger-menu"
-        ><i class="fas fa-bars"></i>
-      </label>
-      <input type="checkbox" id="hamburger-menu" />
-
+      <button class="hamburgerMenu" id ="hamburger"><i class="fas fa-bars"></i></button>
       <nav>
         <ul>
           <li>
-            <a href="index.html" class="active">Home</a>
+            <a href="index.html" >Home</a>
           </li>
-          <li><a href="newreleases.html">New Releases</a></li>
-          <li><a href="usedGames.html"> Used Games</a></li>
           <li><a href="games.html">Games</a></li>
           <li><a href="log_in.html">Log in</a></li>
+          <li><a href="newReleases.html">New Releases</a></li>
+          <li><a href="contact.html"> Contact Us</a></li>
         </ul>
       </nav>
 
@@ -76,15 +72,16 @@
 
     <main>
       <h1>Payment</h1>
+      <div class="pageLayout">
       <form method="GET" action="checkout_sucess.html" id="form">
-        <fieldset>
-          <legend><h2>Payment details</h2></legend>
+       
+          <h2>Payment details</h2>
           <div class="layout">
             <section class="form">
               <h3>Contact Information</h3>
               <label for="email">Email *</label>
               <input type="email" name="email" id="email" class="form_input" />
-              <p class="error" id="emailError">Please insert a Email address</p>
+              <p class="formError" id="emailError">Please insert a Email address</p>
               <h3>Shipping Address</h3>
               <label for="street_address"
                 >Shipping Address * (Minimum 13 characters)</label
@@ -95,7 +92,7 @@
                 id="street_address"
                 class="form_input"
               />
-              <p class="error" id="street_addressError">
+              <p class="formError" id="street_addressError">
                 minimum of 13 characters
               </p>
               <label for="area_code">Area Code* (4 characters) </label>
@@ -105,7 +102,7 @@
                 id="area_code"
                 class="form_input"
               />
-              <p class="error" id="area_codeError">
+              <p class="formError" id="area_codeError">
                 Please insert area code 4 characters
               </p>
 
@@ -117,7 +114,7 @@
                 id="account_number"
                 class="form_input"
               />
-              <p class="error" id="account_numberError">
+              <p class="formError" id="account_numberError">
                 plase insert your card number 16 characters
               </p>
 
@@ -128,42 +125,31 @@
                 id="expiry_date"
                 class="form_input"
               />
-              <p class="error" id="expiry_dateError">
+              <p class="formError" id="expiry_dateError">
                 please insert your cards expiry date
               </p>
               <label for="cvc">CVC* (3 characters)</label>
               <input type="text" name="cvc" id="cvc" class="form_input" />
-              <p class="error" id="cvcError">
+              <p class="formError" id="cvcError">
                 Please insert the cvc code on the back of your card.
               </p>
             </section>
             <section class="product">
               <legend><h2>product(s)</h2></legend>
               <h2>1x product</h2>
-              <section class="product_description">
-                <a href="product_page.html"
-                  ><img
-                    class="product_img"
-                    src="images/product/ACValhalla game cover 1.jpg"
-                    alt="assassin's creed valhalle game viking standing infront of ships"
-                /></a>
-                <section class="product_text">
-                  <h3>Assassin's creed : Valhalla</h3>
-                  <p>State: New</p>
-                  <p>platform: Playstation 4</p>
-                  <p>Price: 60 dollars</p>
-                </section>
-              </section>
+              <div id="contentContainer"></div>
               <div>
                 <h3>Total amount 60 dollars</h3>
               </div>
             </section>
           </div>
           <input type="submit" value="confirm purchase" />
-        </fieldset>
       </form>
+    </div>
     </main>
     <footer></footer>
   </body>
+  <script src="js/global.js"></script>
   <script src="js/shopping_cart.js"></script>
+  <script src="js/global.js"></script>
 </html>

@@ -1,6 +1,12 @@
-.productContainer {
+.productContainer,
+.gamesContainer {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+h2 {
+  display: flex;
   justify-content: center;
 }
 

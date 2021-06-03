@@ -33,20 +33,17 @@
           alt="Game Hub Logo"
           class="logo"
       /></a>
-      <label class="hamburger-label" for="hamburger-menu"
-        ><i class="fas fa-bars"></i>
-      </label>
-      <input type="checkbox" id="hamburger-menu" />
+      <button class="hamburgerMenu" id ="hamburger"><i class="fas fa-bars"></i></button>
       
       <nav>
         <ul>
           <li>
-            <a href="index.html">Home</a>
+            <a href="index.html" class="active">Home</a>
           </li>
-          <li><a href="newReleases.html">New Releases</a></li>
-          <li><a href="usedGames.html"> Used Games</a></li>
           <li><a href="games.html">Games</a></li>
           <li><a href="log_in.html">Log in</a></li>
+          <li><a href="newReleases.html">New Releases</a></li>
+          <li><a href="contact.html"> Contact Us</a></li>
         </ul>
       </nav>
       
@@ -101,10 +98,10 @@
         <fieldset> <legend>product results</legend>
           <section class="search_results">
             <section class=product_group id="product_group1">
-              <p>Loading..</p>
+              <i class="loading fas fa-circle-notch"></i>
             </section>
         <section class=product_group id="product_group2">
-          <p>Loading..</p>
+          <i class="loading fas fa-circle-notch"></i>
         </section> 
         </fieldset>
         <div class="page_number">
@@ -143,6 +140,7 @@
       </section>
     </footer>
   </body>
+  <script src="js/global.js"></script>
   <script src="js/cart.js"></script>
   <script src="js/search_results.js"></script>
 </html>

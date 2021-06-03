@@ -1,0 +1,82 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  color: white;
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 0px 3px 6px #272f59bc;
+  min-height: 500px;
+}
+
+.formContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sucessMessage {
+  padding: 4em;
+  margin: 20px auto;
+  color: white;
+  border: solid lightgreen;
+  text-align: center;
+  display: none;
+}
+.instruction {
+  margin: auto;
+}
+
+.formInput,
+textarea,
+label {
+  width: 280px;
+  align-self: center;
+  margin: 10px;
+}
+label {
+  font-size: 1.2em;
+  text-align: center;
+}
+.formInput {
+  height: 60px;
+  border-radius: 26px;
+  border: none;
+}
+
+textarea {
+  border-radius: 10px;
+  border: none;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.submitBtn {
+  background-color: white;
+  font-size: 1.2em;
+  margin: 20px auto;
+  border: solid lightgray 1px;
+  padding: 1.5em;
+  border-radius: 32px;
+  width: 200px;
+}
+
+.submitBtn:hover {
+  background-color: var(--hover-color);
+  border: solid lightgray 1px;
+}
+
+.error {
+  text-align: center;
+  margin: auto;
+}
+
+@media (min-width: 700px) {
+  .sucessMessage {
+    font-size: 1.5em;
+  }
+}

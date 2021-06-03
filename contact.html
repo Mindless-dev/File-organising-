@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>game hub| Homepage</title>
+    <title>game hub| contact</title>
     <meta
       name="description"
-      content="game hub home page, used ,new and preorder"
+      content="contact game hub here, send the  GameHub PR team a messege "
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/globalStyles.css" />
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/contactStyles.css" />
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
@@ -46,12 +46,12 @@
       <nav>
         <ul>
           <li>
-            <a class="current" href="index.html" class="active">Home</a>
+            <a href="index.html" class="active">Home</a>
           </li>
           <li><a href="games.html">Games</a></li>
           <li><a href="log_in.html">Log in</a></li>
           <li><a href="newReleases.html">New Releases</a></li>
-          <li><a href="contact.html"> Contact Us</a></li>
+          <li><a class="current" href="contact.html"> Contact Us</a></li>
         </ul>
       </nav>
 
@@ -75,35 +75,33 @@
       </section>
     </header>
     <main>
-      <h1>Welcome to the universe of games</h1>
-      
-      <section class="used_games">
-        <h3>Sell and buy used games</h3>
-        <p>help other gamers out, buy used games and sell your used games</p>
-        <section class="usedGamesLinks">
-        <a class="linkBtn" href="new_user.html">Sign up</a>
-        <a class="linkBtn" href="log_in.html">Log in</a>
-      </section>
-      </section>
-
-      <section class="new_games">
-        <h2>New releases</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, quo
-          magnam cum consequatur
-        </p>
-        <a class="linkBtn" href="new_games.html">new releases</a>
-      </section>
-
-      <section class="contact_us">
-        <h2>Contact Us</h2>
-        <p>
-          You can contact us on various social medias or email,
-          you can also contact us here by clicking the botton below
-        </p>
-        <a class="linkBtn" href="contact.html">Contact</a
-        >
-      </section>
+        <h1>Contact Us </h1>
+        <section class="contactForm">
+            <form action="">
+                
+            <div class="formContent">
+                <h2>Contact</h2>
+                <label for="name">Name</label>
+                <p class="instruction">Minimum 3 characters</p>
+                <input type="text" name="name" id="name" class="formInput">
+                <p class="formError" id="nameError">Please write in your name</p>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="formInput">
+                <p class="formError" id="emailError">please input a valid email</p>
+                <label for="subject">Subject</label>
+                <p class="instruction">Minimum 19 characters</p>
+                <input type="text" id= subject name="subject"  class="formInput" >
+                <p class="formError" id="subjectError">Subject must be at least 19 characters</p>
+                <label for="message">Message</label>
+                <p class="instruction">Minimum 30 characters</p>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <p class="formError" id="messageError"> Message must be a minimum of 30 characters</p>
+                <input type="submit" value="Send Message"  class="submitBtn">
+            </div>
+            <div class="sucessMessage"> Thank you for sending us a message</div>
+            </form>
+        </section>
+     
     </main>
     <footer>
       <section class="contact">
@@ -135,4 +133,5 @@
     </footer>
   </body>
 <script src="js/global.js"></script>
+<script src="js/contact.js"></script>
 </html>

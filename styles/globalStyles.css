@@ -8,12 +8,36 @@
   src: url("../fonts/TCM_____.TTF");
 }
 
+.formError {
+  max-width: 240px;
+  margin: 10px;
+  padding: 1em;
+  border: solid red;
+  display: none;
+}
+
 :root {
   --primary-color: #86a7df;
   --secondary-color: #1b203d;
   --hover-color: #fb8925;
   --primary-text: "ms";
   --secondary-text: "tw";
+}
+.loading {
+  position: relative;
+  animation-name: loading;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  font-size: 3em;
+  color: var(--primary-color);
+  display: flex;
+  margin: 20px auto;
+}
+
+@keyframes loading {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .error {
@@ -38,7 +62,8 @@ body {
 
 header {
   background-color: var(--primary-color);
-  margin: 10px;
+  margin: -0.5em;
+  margin-bottom: 20px;
 }
 
 .icon,
@@ -97,9 +122,16 @@ input[type="submit"]:hover {
   position: relative;
   top: 25px;
 }
+button {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 1em;
+  border-radius: 20px;
+  border: 2px solid;
+  box-shadow: 0px 3px 6px #272f59bc;
+}
 
-nav,
-#hamburger-menu {
+nav {
   display: none;
 }
 nav li {
@@ -114,23 +146,23 @@ nav a {
   margin: 10px;
 }
 
-.hamburger-label {
+.hamburgerMenu {
   float: right;
-  font-size: 1.5em;
+  font-size: 2em;
   color: white;
   background-color: var(--secondary-color);
   border: white solid 1px;
   margin: 10px;
   border-radius: 50%;
+  margin-top: 35px;
   padding: 5px;
   text-align: center;
   width: 2em;
   height: 2em;
-  line-height: 2em;
+  line-height: 1em;
   vertical-align: middle;
 }
-
-#hamburger-menu:checked ~ nav {
+.openNav {
   display: block;
   animation-name: nav_pop_up;
   animation-duration: 1s;
@@ -199,15 +231,6 @@ h2 {
   margin: 10px;
 }
 
-button {
-  background-color: var(--secondary-color);
-  color: white;
-  padding: 1em;
-  border-radius: 20px;
-  border: 2px solid;
-  box-shadow: 0px 3px 6px #272f59bc;
-}
-
 button:hover,
 .icon_header:hover,
 .search_icon:hover {
@@ -227,7 +250,8 @@ button:hover {
 
 footer {
   background-color: var(--primary-color);
-  margin: 10px;
+  margin: -0.5em;
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -254,7 +278,14 @@ footer {
   font-size: 1em;
 }
 
+header > .icons {
+  margin: 0px 20px;
+}
+
 @media (min-width: 1076px) {
+  .hamburgerMenu {
+    display: none;
+  }
   h1 {
     display: flex;
     justify-content: center;

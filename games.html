@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>game hub | checkout page</title>
+    <title>game hub | game page</title>
     <meta name="description" content="game hub checkout page" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/globalStyles.css"/>
@@ -37,20 +37,18 @@
           alt="Game Hub Logo"
           class="logo"
       /></a>
-      <label class="hamburger-label" for="hamburger-menu"
-        ><i class="fas fa-bars"></i>
-      </label>
-      <input type="checkbox" id="hamburger-menu" />
+      <button class="hamburgerMenu" id ="hamburger"><i class="fas fa-bars"></i></button>
+
 
       <nav>
         <ul>
           <li>
             <a href="index.html" class="active">Home</a>
           </li>
-          <li><a href="newreleases.html">New Releases</a></li>
-          <li><a href="usedGames.html"> Used Games</a></li>
-          <li><a href="games.html">Games</a></li>
+          <li><a class="current" href="games.html">Games</a></li>
           <li><a href="log_in.html">Log in</a></li>
+          <li><a href="newReleases.html">New Releases</a></li>
+          <li><a href="contact.html"> Contact Us</a></li>
         </ul>
       </nav>
 
@@ -76,10 +74,19 @@
 
     <main>
       <h1>Game page</h1>
-
+      <section class="newReleases">
+      <h2>New Releases</h2>
       <div class="productContainer">
-          <p>Loading...</p>
+        <i class="loading fas fa-circle-notch"></i>
       </div>
+    </section>
+
+    <section class="games">
+      <h2> All Games</h2>
+      <div class="gamesContainer">
+        <i class="loading fas fa-circle-notch"></i>
+      </div>
+    </section>
     </main>
     <footer>
 
@@ -111,6 +118,7 @@
         </section>
       </footer>
   </body>
+  <script src="js/global.js"></script>
   <script src="js/cart.js"></script>
   <script src="js/game_page.js"></script>
 </html>

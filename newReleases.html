@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>game hub| Homepage</title>
+    <title>game hub| New Releases</title>
     <meta
       name="description"
-      content="game hub home page, used ,new and preorder"
+      content="the newest game releases featured on game hub"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/globalStyles.css" />
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/newrealeses.css" />
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
@@ -46,11 +46,11 @@
       <nav>
         <ul>
           <li>
-            <a class="current" href="index.html" class="active">Home</a>
+            <a  href="index.html" class="active">Home</a>
           </li>
           <li><a href="games.html">Games</a></li>
           <li><a href="log_in.html">Log in</a></li>
-          <li><a href="newReleases.html">New Releases</a></li>
+          <li><a class="current" href="newReleases.html">New Releases</a></li>
           <li><a href="contact.html"> Contact Us</a></li>
         </ul>
       </nav>
@@ -75,34 +75,14 @@
       </section>
     </header>
     <main>
-      <h1>Welcome to the universe of games</h1>
-      
-      <section class="used_games">
-        <h3>Sell and buy used games</h3>
-        <p>help other gamers out, buy used games and sell your used games</p>
-        <section class="usedGamesLinks">
-        <a class="linkBtn" href="new_user.html">Sign up</a>
-        <a class="linkBtn" href="log_in.html">Log in</a>
+      <h1>New Releases</h1>
+      <section class="newestGames">
+        <h2>Latest Realeses</h2>
+        <div id="newRealeses"> <i class="loading fas fa-circle-notch"></i></div>
       </section>
-      </section>
-
-      <section class="new_games">
-        <h2>New releases</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, quo
-          magnam cum consequatur
-        </p>
-        <a class="linkBtn" href="new_games.html">new releases</a>
-      </section>
-
-      <section class="contact_us">
-        <h2>Contact Us</h2>
-        <p>
-          You can contact us on various social medias or email,
-          you can also contact us here by clicking the botton below
-        </p>
-        <a class="linkBtn" href="contact.html">Contact</a
-        >
+      <section class="newGames">
+        <h2>New Realeses</h2>
+        <div id="newGames"> <i class="loading fas fa-circle-notch"></i></div>
       </section>
     </main>
     <footer>
@@ -135,4 +115,6 @@
     </footer>
   </body>
 <script src="js/global.js"></script>
+<script src="js/newrelases.js"></script>
+<script src="js/cart.js"></script>
 </html>

@@ -1,0 +1,111 @@
+#newGames {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.product {
+  margin: 20px;
+  box-shadow: 0px 3px 6px #272f59bc;
+  display: flex;
+  flex-direction: column;
+  max-width: 310px;
+  justify-content: center;
+}
+
+.product_description {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.product_buttons {
+  display: flex;
+  margin: 10px auto;
+}
+
+.product_description > p {
+  margin: 0px;
+}
+
+h3 {
+  margin: 10px;
+  font-size: 1.2em;
+}
+
+.product > a > img {
+  margin: 0px auto;
+}
+
+.product > a > img:hover {
+  box-shadow: 0px 3px 6px #272f59bc;
+}
+
+.icons_product {
+  display: flex;
+  justify-content: center;
+}
+.addToCart {
+  box-shadow: none;
+  font-size: 1.4em;
+}
+.addToCart:hover {
+  border: solid 1px black;
+}
+
+#newRealeses {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  justify-content: center;
+  margin: auto;
+}
+
+.productFeauterd0,
+.productFeauterd1,
+.productFeauterd2,
+.productFeauterd3 {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 3px 6px #272f59bc;
+  margin: 10px;
+  min-width: 320px;
+  justify-content: center;
+}
+
+.productFeauterd0 > .product_description,
+.productFeauterd0 > h3,
+.productFeauterd0 > a > img,
+.productFeauterd1 > .product_description,
+.productFeauterd1 > h3,
+.productFeauterd1 > a > img,
+.productFeauterd2 > .product_description,
+.productFeauterd2 > h3,
+.productFeauterd2 > a > img,
+.productFeauterd3 > .product_description,
+.productFeauterd3 > h3,
+.productFeauterd3 > a > img {
+  display: flex;
+  margin: 10px auto;
+}
+
+.productFeauterd0 > a > img:hover,
+.productFeauterd1 > a > img:hover,
+.productFeauterd2 > a > img:hover,
+.productFeauterd3 > a > img:hover {
+  box-shadow: 0px 3px 6px #272f59bc;
+}
+
+@media (min-width: 800px) {
+  .productFeauterd0,
+  .productFeauterd1,
+  .productFeauterd2,
+  .productFeauterd3 {
+    min-width: 540px;
+  }
+}

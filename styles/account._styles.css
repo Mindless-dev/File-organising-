@@ -24,9 +24,66 @@
   margin: 10px;
 }
 .account_publish {
+  display: grid;
+  grid-template-areas:
+    "user"
+    "publish";
+  grid-template-columns: minmax(360px, 1250px);
+  justify-content: center;
+}
+
+.user_details {
+  grid-area: user;
+}
+
+.publish_game {
+  grid-area: publish;
+}
+.user_details,
+.publish_game {
+  margin: 10px;
   display: flex;
-  justify-content: start;
+  flex-direction: column;
+  box-shadow: 0px 3px 6px #272f59bc;
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.gamePublished {
+  display: none;
+  justify-content: center;
+  font-size: 1.5em;
+  padding: 0.5em;
+  border: solid lightgreen;
+}
+
+.text {
+  display: flex;
   flex-wrap: wrap;
+}
+
+.editIcon {
+  position: relative;
+  font-size: 0.9em;
+  background-color: white;
+  color: black;
+  padding: 1em;
+  border-radius: 50%;
+  border: solid gray 2px;
+  align-self: flex-end;
+  top: -42px;
+  margin: 4px;
+  cursor: pointer;
+}
+.editIcon:hover {
+  background-color: var(--hover-color);
+}
+.userDetails,
+.cardInfo {
+  margin: auto;
+}
+.cardInfo {
+  max-width: 170px;
 }
 
 .product_description > p {
@@ -52,7 +109,6 @@
 }
 
 fieldset,
-.user_details,
 h1,
 h2,
 h3 {
@@ -70,74 +126,37 @@ h3 {
 .product {
   margin: 20px;
 }
-.user_details {
-  display: flex;
-  flex-direction: column;
-  width: 900px;
-  margin: 10px;
-  max-height: 300px;
-  box-shadow: 0px 3px 6px #272f59bc;
-}
-
-.publish_game {
-  width: 900px;
-  height: 290px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 10px 10px;
-  padding: 0px;
-}
 
 .form_input {
   display: flex;
   justify-content: center;
-}
-
-fieldset > input {
-  max-width: 250px;
-  height: 20px;
-  border-radius: 28px;
-  margin: 10px;
-}
-
-fieldset {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  box-shadow: 0px 3px 6px #272f59bc;
-  position: relative;
-  top: -10px;
-}
-
-fieldset > select {
-  max-width: 250px;
+  width: 290px;
   height: 30px;
   margin: 10px;
-  font-size: 1.2em;
+  border-radius: 20px;
+  margin: auto;
+  border: solid rgb(167, 165, 165) 1px;
+}
+label {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
 }
 
-fieldset > select > option {
-  font-size: 1.5em;
-}
-
-fieldset > input[type="submit"] {
-  background-color: #1b203d;
-  color: white;
+input[type="submit"] {
+  background-color: white;
   border: white solid 2px;
-  height: 40px;
-  font-size: 1.2em;
+  border-radius: 28px;
+  padding: 1.2em;
+  display: flex;
+  margin: 20px auto;
   box-shadow: 0px 3px 6px #272f59bc;
 }
 
-fieldset > input[type="submit"]:hover,
-.option_button:hover {
+input[type="submit"]:hover {
   background-color: var(--hover-color);
-  color: black;
   border: solid black 2px;
 }
-
 .option_button {
   background-color: var(--secondary-color);
   color: white;

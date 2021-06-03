@@ -49,6 +49,15 @@
   margin: auto;
   justify-content: center;
 }
+
+.single_product > p {
+  margin: auto;
+}
+
+.single_product > .product_description {
+  margin: 10px auto;
+}
+
 h2 {
   margin: auto;
 }
@@ -65,27 +74,16 @@ h3 {
   margin: 10px;
 }
 
-.single_product > p {
-  margin: 10px;
-}
 .single_product > img {
   margin: auto;
-  width: 70%;
+  width: 50%;
 }
 
-.single_product > legend {
-  display: flex;
-  margin: 20px 10px;
+.description_price > p {
+  margin: 0px;
 }
-
-.single_product > select {
-  height: 40px;
-  width: 60%;
-  margin: 10px;
-}
-
-.single_product > select > option {
-  font-size: 1.5em;
+.description_price {
+  margin-top: 10px;
 }
 
 .product_icon,
@@ -98,6 +96,10 @@ h3 {
   padding: 19px;
   line-height: -1px;
   border: solid white 2px;
+}
+
+.single_product > .icons_product > .addToCart_product {
+  top: 0px;
 }
 
 .addToCart_product {
@@ -126,6 +128,10 @@ h3 {
   margin: 10px;
   justify-content: start;
   font-size: 1.2em;
+}
+
+p {
+  max-width: 470px;
 }
 
 /* footer styling layout and posistion */

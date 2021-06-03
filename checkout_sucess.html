@@ -37,20 +37,19 @@
           alt="Game Hub Logo"
           class="logo"
       /></a>
-      <label class="hamburger-label" for="hamburger-menu"
-        ><i class="fas fa-bars"></i>
-      </label>
-      <input type="checkbox" id="hamburger-menu" />
+      <button class="hamburgerMenu" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
 
       <nav>
         <ul>
           <li>
             <a href="index.html">Home</a>
           </li>
-          <li><a href="newReleases.html">New Releases</a></li>
-          <li><a href="usedGames.html"> Used Games</a></li>
           <li><a href="games.html">Games</a></li>
           <li><a href="log_in.html">Log in</a></li>
+          <li><a href="newReleases.html">New Releases</a></li>
+          <li><a href="contact.html"> Contact Us</a></li>
         </ul>
       </nav>
 
@@ -75,19 +74,19 @@
     <main>
       <h1>Payment Success</h1>
       <section class="payment_sucess_card">
-        <h2>Assasin's Creed : Valhalla</h2>
-        <img
-          src="images/product/ACValhalla game cover 1.jpg"
-          alt="assasin's creed: valhalla game"
-        />
-        <p>Platform: Playstation 4</p>
-        <p>State: NEW</p>
+        <div id="contentContainer"></div>
+        <section class="purchaseSummary">
         <p>Reciept sent to your email address: Customer@email.com</p>
-        <p>total amount: 60 dollars</p>
+        <p>Total amount: 60 dollars</p>
+      </section>
+        
+        </section>
       </section>
       <a class="home_button" href="index.html"> Back to Home page</a>
     </main>
 
     <footer></footer>
   </body>
+  <script src="js/global.js"></script>
+  <script src="js/checkoutSucess.js"></script>
 </html>

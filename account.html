@@ -35,18 +35,17 @@
           alt="Game Hub Logo"
           class="logo"
       /></a>
-      <label class="hamburger-label" for="hamburger-menu"
-        ><i class="fas fa-bars"></i>
-      </label>
-      <input type="checkbox" id="hamburger-menu" />
+      <button class="hamburgerMenu" id ="hamburger"><i class="fas fa-bars"></i></button>
 
       <nav>
         <ul>
-          <li><a href="index.html" >Home</a></li>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="log_in.html">Log in</a></li>
           <li><a href="newReleases.html">New Releases</a></li>
-          <li><a href="usedGames.html"> Used Games</a></li>
-          <li><a href="Games.html">Games</a></li>
-          <li><a  href="log_in.html">Log in</a></li>
+          <li><a href="contact.html"> Contact Us</a></li>
         </ul>
       </nav>
 
@@ -75,20 +74,29 @@
       <div class="account_publish">
         <section class="user_details">
           <h2>User details</h2>
+          <i class="editIcon fas fa-pencil-alt"></i>
+          <section class="text">
+          <section class="userDetails">
           <p>Username: user123</p>
           <p>Email: user123@email</p>
-          <p>Card and account number:</p>
-          <p>Card</p>
-          <p>Account number</p>
+          <p>Games Sold : 2</p>
+          </section>
+          <section Class= "cardInfo">
+          <p>Card Details:</p>
+          <p>Card: VISA</p>
+          <p>Account number: xxx xxx xxx xxxx xxx</p>
+          </section>
+          </section>
         </section>
         <section class="publish_game">
-        <form method="POST">
-          <fieldset>
+        <form>
+          <div id="formInputs">
             <legend><h2>Publish Game</h2></legend>
-            <label for="game title">game title</label>
-            <input type="text" name=game_title id="game title" class=form_input  required/>
+            <label for="game-title">Game Title</label>
+            <input type="text" name=game_title id="game-title" class=form_input />
+            <p class="formError" id="titleError">Please input a game title</p>
             <label for="platform">Platform:</label>
-            <select name="platform" id="game_platform" class=form_input  required>
+            <select name="platform" id="game_platform" class=form_input >
               <option value="pc">PC</option>
               <option value="playstation_4">Playstation 4</option>
               <option value="xbox_one">Xbox One</option>
@@ -96,21 +104,23 @@
               <option value="other">Other</option>
             </select>
             <label for="price">Price</label>
-            <input type="text" name="price" id="price" class=form_input  required/>
-            <input type="submit" value="Publish Game" />
-          </fieldset>
+            <input type="text" name="price" id="price" class=form_input />
+            <p class="formError" id="priceError">Please input a price</p>
+            <input type="submit" id="submitBtn"value="Publish Game" />
+          </div>
+            <section class="gamePublished" id="formCompleted"><h4>Game Published</h4></section>
         </form>
       </section>
       </div>
         
       <h2>Liked Games</h2>
       <section class="liked_games">
-        <p>Loading...</p>
+        <i class="loading fas fa-circle-notch"></i>
       </section>
 
       <h2>Reccomended for you</h2>
       <section class="recomended">
-        <p>Loading...</p>
+        <i class="loading fas fa-circle-notch"></i>
       </section>
       <h2>Games you're currently selling</h2>
       <section class="currently_selling">
@@ -171,6 +181,7 @@
       </section>
     </footer>
   </body>
+  <script src="js/global.js"></script>
   <script src="js/cart.js"></script>
   <script src="js/account.js"></script>
 </html>

@@ -34,18 +34,18 @@
             alt="Game Hub Logo"
             class="logo"
         /></a>
-        <label class="hamburger-label" for="hamburger-menu"
-          ><i class="fas fa-bars"></i>
-        </label>
-        <input type="checkbox" id="hamburger-menu" />
+        <button class="hamburgerMenu" id ="hamburger"><i class="fas fa-bars"></i></button>
+
 
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="newReleases.html">New Releases</a></li>
-            <li><a href="usedGames.html"> Used Games</a></li>
+            <li>
+              <a href="index.html" class="active">Home</a>
+            </li>
             <li><a href="games.html">Games</a></li>
             <li><a href="log_in.html">Log in</a></li>
+            <li><a href="newReleases.html">New Releases</a></li>
+            <li><a href="contact.html"> Contact Us</a></li>
           </ul>
         </nav>
 
@@ -73,8 +73,8 @@
       <main>
         <h1>New User</h1>
         <form action="account.html"  id="newUserform">
-          <fieldset>
-            <legend><h2>User Details</h2></legend>
+          
+            <h2>User Details</h2>
           <div class="form_layout">
             <div>
             <label for="name">User Name* (minimum 3 characters)</label>
@@ -85,7 +85,7 @@
               class="form_input"
               
             />
-            <p class="error" id="nameError">Username must be minimum of 3 characters</p>
+            <p class="formError" id="nameError">Username must be minimum of 3 characters</p>
 
             <label for="email">Email*</label>
             <input
@@ -95,7 +95,7 @@
               class="form_input"
               
             />
-            <p class="error" id=emailError>Please insert a email</p>
+            <p class="formError" id=emailError>Please insert a email</p>
             <label for="password">Password *</label>
             <p class="pasword_requirements">A password must contain atleast 1 lowercase letter, 1 uppercase letter, 1 number, and be at least 8 characters long </p>
             <input
@@ -105,7 +105,7 @@
               class="form_input"
               
             />
-            <p class="error" id="passwordError"> Please follow instructions above on how to create a valid password</p>
+            <p class="formError" id="passwordError"> Please follow instructions above on how to create a valid password</p>
             <label for="repeat_password">Confirm Password * </label>
             <input
               type="password"
@@ -113,14 +113,14 @@
               id="repeat_password"
               class="form_input"
             />
-            <p class="error" id="repeat_passwordError">Passwords does not match</p>
+            <p class="formError" id="repeat_passwordError">Passwords does not match</p>
 
             <label for="address">Street address* (minimum 13 characters)</label>
             <input type="text" name="address" id="address" class="form_input" />
-            <p class=error id="adressError">Address must be minimum 13 characters long</p>
+            <p class=formError id="adressError">Address must be minimum 13 characters long</p>
             <label for="area_code">Area Code*(4 characters)</label>
             <input type="text" id="area_code" class="form_input" />
-            <p class="error" id="area_codeError">Please insert area code 4 characters </p>
+            <p class="formError" id="area_codeError">Please insert area code 4 characters </p>
             </div>
             <div>
             <legend>Card Details (Optional)</legend>
@@ -152,11 +152,12 @@
             </div>
           </div>
           <input type="submit" value="create user"/>
-          </fieldset>
+          
         </form>
       </main>
       <footer></footer>
     </body>
     <script src="js/new_user_form.js"></script>
+    <script src="js/global.js"></script>
   </html>
 </html>

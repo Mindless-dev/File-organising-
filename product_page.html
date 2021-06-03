@@ -37,20 +37,17 @@
           alt="Game Hub Logo"
           class="logo"
       /></a>
-      <label class="hamburger-label" for="hamburger-menu"
-        ><i class="fas fa-bars"></i>
-      </label>
-      <input type="checkbox" id="hamburger-menu" />
+      <button class="hamburgerMenu" id ="hamburger"><i class="fas fa-bars"></i></button>
 
       <nav>
         <ul>
           <li>
-            <a href="index.html">Home</a>
+            <a href="index.html" class="active">Home</a>
           </li>
-          <li><a href="newReleases.html">New Releases</a></li>
-          <li><a href="usedGames.html"> Used Games</a></li>
           <li><a href="games.html">Games</a></li>
           <li><a href="log_in.html">Log in</a></li>
+          <li><a href="newReleases.html">New Releases</a></li>
+          <li><a href="contact.html"> Contact Us</a></li>
         </ul>
       </nav>
 
@@ -77,11 +74,13 @@
     <main>
       <h1>Product Page</h1>
       <div class="product_recommended">
-        <section class="single_product">loading...</section>
+        <section id="single_product">
+          <i class="loading fas fa-circle-notch"></i>
+        </section>
         
         <h3>Reccomended for you</h3>
         <section class="recomended">
-          <p>Loading...</p>
+          <i class="loading fas fa-circle-notch"></i>
         </section>
       </div>
     </main>
@@ -114,6 +113,7 @@
         <p>Repudiandae sed cum reiciendis quo porro ducimus nobis</p>
       </section>
     </footer>
+    <script src="js/global.js"></script>
     <script src="js/product_detailed.js"></script>
     <script src="js/cart.js"></script>
   </body>
